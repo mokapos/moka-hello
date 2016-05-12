@@ -4,7 +4,8 @@
 ```
  - Go to https://api.mokapos.com/oauth/applications
  - Add Apps
- - Add 'Name', 'Redirect URI'
+ - Add 'Name'
+ - Add Redirect URI for example: http://apps.sample.com/auth/moka/callback
 ```
 
 ###2. Create file .env: ###
