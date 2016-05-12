@@ -14,5 +14,5 @@ MOKA_APP_ID=your app_id
 MOKA_SECRET_KEY=your secret key
 ```
 
-3. Running api-client $ rails s --port=3002
+3. Running rails moka api-client  `rails s --port=3002`
 
