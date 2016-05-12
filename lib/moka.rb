@@ -2,7 +2,7 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class Doorkeeper < OmniAuth::Strategies::OAuth2
+    class Mokaprovider < OmniAuth::Strategies::OAuth2
       option :name, 'moka'
       option :client_options, {
         site:          ENV['MOKA_HOST_PROVIDER'],
