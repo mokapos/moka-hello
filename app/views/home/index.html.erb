@@ -1,0 +1,10 @@
+<% if session[:logged] %>
+  <h3>Selamat Datang <%= session[:full_name] %></h3>
+  <%= link_to 'Logout', logout_path %>
+<% else %>
+  <div class="button">
+    <a href="<%= root_url %>auth/moka" class="btn-login-with-moka">
+      Login With Moka
+    </a>
+  </div>
+<% end %>
