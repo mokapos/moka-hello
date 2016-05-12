@@ -1,6 +1,11 @@
 # MOKA Api Client
 
 1. Create new apps on moka API provider
+```
+ - Go to https://api.mokapos.com/oauth/applications
+ - Add Apps
+ - Add 'Name', 'Redirect URI'
+```
 
 2. Create file .env:
 ```
