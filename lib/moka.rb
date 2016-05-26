@@ -16,7 +16,9 @@ module OmniAuth
       info do
         {
           email: raw_info['email'],
-          full_name: raw_info['full_name']
+          full_name: raw_info['full_name'],
+          business_id: raw_info['business_id'],
+          outlet_ids: raw_info['outlet_ids']
         }
       end
 
@@ -27,6 +29,7 @@ module OmniAuth
       def raw_info
         @raw_info ||= access_token.get('/v1/profile/self').parsed
       end
+
     end
   end
 end

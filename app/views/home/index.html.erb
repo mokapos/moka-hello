@@ -1,6 +1,52 @@
 <% if session[:logged] %>
   <h3>Selamat Datang <%= session[:full_name] %></h3>
   <%= link_to 'Logout', logout_path %>
+  <br/>
+  <br/>
+  <br/>
+  access_token: <%= session[:access_token] %>
+  <br/>
+  refresh_token: <%= session[:refresh_token] %>
+  <br/>
+  expires_at: <%= session[:expires_at] %>
+  <br/>
+  business_id: <%= session[:business_id] %>
+  <br/>
+  outlet_ids: <%= session[:outlet_ids] %>
+  <br/> <br/> <br/>
+  <h2>Sample URL</h2>
+  Library
+  <ul>
+    <li><%= link_to 'Business', "#{ENV['MOKA_HOST_PROVIDER']}/v1/businesses?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Outlets', "#{ENV['MOKA_HOST_PROVIDER']}/v1/businesses/#{session[:business_id]}/outlets?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Item Library', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/items?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Categories', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/categories?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Modifiers', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/modifiers?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Discounts', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/discounts?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Taxes', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/taxes?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Gratuities', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/gratuities?access_token=#{session[:access_token]}", target: '_blank' %></li>
+  </ul>
+  Reports
+  <ul>
+    <li><%= link_to 'Sales Summary', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/sales_summary?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Payment Methods', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/payment_methods?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Item Sales', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/item_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Category Sales', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/category_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Modifier Sales', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/modifier_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Discounts', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/discount_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Taxes', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/tax_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Gratuities', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/gratuity_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Collected By', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/collector_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Served By', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/server_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+  </ul>
+  Customers
+  <ul>
+    <li><%= link_to 'Customers', "#{ENV['MOKA_HOST_PROVIDER']}/v1/businesses/#{session[:business_id]}/customers?mobile_device=true&access_token=#{session[:access_token]}", target: '_blank' %></li>
+  </ul>
+  Info Token
+  <ul>
+    <li><%= link_to 'Token Info', "#{ENV['MOKA_HOST_PROVIDER']}/oauth/token/info?access_token=#{session[:access_token]}", target: '_blank' %></li>
+  </ul>
 <% else %>
   <div class="button">
     <a href="<%= root_url %>auth/moka" class="btn-login-with-moka">
