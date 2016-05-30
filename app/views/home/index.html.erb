@@ -38,6 +38,8 @@
     <li><%= link_to 'Gratuities', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/gratuity_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
     <li><%= link_to 'Collected By', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/collector_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
     <li><%= link_to 'Served By', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/server_sales?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Transactions', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/transactions?access_token=#{session[:access_token]}", target: '_blank' %></li>
+    <li><%= link_to 'Get Latests Transactions', "#{ENV['MOKA_HOST_PROVIDER']}/v1/outlets/#{session[:outlet_ids].first}/reports/get_latest_transactions?access_token=#{session[:access_token]}", target: '_blank' %></li>
   </ul>
   Customers
   <ul>
