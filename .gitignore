@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+log/**/*
+tmp/*
+public/uploads/*
+public/assets/*
+.env
