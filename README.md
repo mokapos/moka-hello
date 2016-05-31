@@ -8,6 +8,7 @@
 
 ###2. Create file .env: ###
 ```
+MOKA_URL=https://www.mokapos.com
 MOKA_HOST_PROVIDER=https://api.mokapos.com
 MOKA_APP_ID=your app_id
 MOKA_SECRET_KEY=your secret key
