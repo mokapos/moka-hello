@@ -8,8 +8,6 @@
   <br/>
   refresh_token: <%= session[:refresh_token] %>
   <br/>
-  expires_at: <%= session[:expires_at] %>
-  <br/>
   business_id: <%= session[:business_id] %>
   <br/>
   outlet_ids: <%= session[:outlet_ids] %>
@@ -44,6 +42,11 @@
   Customers
   <ul>
     <li><%= link_to 'Customers', "#{ENV['MOKA_HOST_PROVIDER']}/v1/businesses/#{session[:business_id]}/customers?mobile_device=true&access_token=#{session[:access_token]}", target: '_blank' %></li>
+  </ul>
+  Sample Refresh Token
+  <ul>
+    <li><%= link_to 'Only Refresh Token', refresh_token_path %></li>
+    <li><%= link_to 'Items With Refresh Token', items_path, target: '_blank' %></li>
   </ul>
   Info Token
   <ul>
