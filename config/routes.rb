@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   get '/logout' => 'application#logout', as: 'logout'
   get '/refresh_token' => 'home#refresh_token', as: 'refresh_token'
   resources :items, only: [:index]
+
+  namespace :v2 do
+    get '/' => 'home#index'
+  end
 end

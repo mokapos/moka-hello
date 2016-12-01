@@ -1,7 +1,8 @@
 <% if session[:logged] %>
   <h3>Selamat Datang <%= session[:full_name] %></h3>
   <%= link_to 'Logout', logout_path %>
-  <br/>
+  <br/> <br/>
+  version 1 | &nbsp; <%= link_to 'version 2', v2_path %>
   <br/>
   <br/>
   access_token: <%= session[:access_token] %>
