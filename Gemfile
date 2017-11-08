@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.2.5.1'
+gem 'rails', '4.2.8'
 gem 'sqlite3', '1.3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'therubyracer', '0.12.2', platforms: :ruby
+gem 'therubyracer', '0.12.3', platforms: :ruby
 gem 'jquery-rails', '4.1.1'
 gem 'turbolinks', '2.5.3'
 gem 'jbuilder', '~> 2.0'
@@ -26,4 +26,3 @@ group :development do
   gem 'spring', '1.6.4'
   gem 'thin', '1.7.0'
 end
-
