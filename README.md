@@ -8,8 +8,8 @@
 
 
 ### 1. Create new apps on moka API provider
-* Go to `https://apps.mokapos.com`
-* Add Apps
+* Go to `https://api.mokapos.com`
+* Add Apps (for testing purposes, you can use a free trial account)
 * Add 'Name'
 * Add Redirect URI: `https://localhost:3002/auth/moka/callback`
 
