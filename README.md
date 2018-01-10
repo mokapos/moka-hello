@@ -4,9 +4,6 @@
 * Ruby Version 2.2.4
 * Rails 4.2.5.1
 
-
-
-
 ### 1. Create new apps on moka API provider
 * Go to `https://api.mokapos.com`
 * Add Apps (for testing purposes, you can use a free trial account)
