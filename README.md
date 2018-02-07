@@ -5,7 +5,7 @@
 * Rails 4.2.5.1
 
 ### 1. Create new apps on moka API provider
-* Go to `https://api.mokapos.com`
+* Go to `https://connect.mokapos.com`
 * Add Apps (for testing purposes, you can use a free trial account)
 * Add 'Name'
 * Add Redirect URI: `https://localhost:3002/auth/moka/callback`
@@ -14,6 +14,7 @@
 ```
 MOKA_URL=https://www.mokapos.com
 MOKA_HOST_PROVIDER=https://api.mokapos.com
+MOKA_CONNECT_PROVIDER=https://connect.mokapos.com
 MOKA_APP_ID=your app_id
 MOKA_SECRET_KEY=your secret key
 ```

@@ -5,8 +5,8 @@ module OmniAuth
     class Mokaprovider < OmniAuth::Strategies::OAuth2
       option :name, 'moka'
       option :client_options, {
-        site:          ENV['MOKA_HOST_PROVIDER'],
-        authorize_url: "#{ENV['MOKA_HOST_PROVIDER']}/oauth/authorize"
+        site:          ENV['MOKA_CONNECT_PROVIDER'],
+        authorize_url: "#{ENV['MOKA_CONNECT_PROVIDER']}/oauth/authorize"
       }
 
       uid {
