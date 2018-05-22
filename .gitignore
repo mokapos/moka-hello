@@ -5,4 +5,5 @@ tmp/*
 public/uploads/*
 public/assets/*
 .env
-Gemfile.lock
+.idea
+.bundle
