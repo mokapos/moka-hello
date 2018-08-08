@@ -5,10 +5,11 @@
 * Rails 4.2.5.1
 
 ### 1. Create new apps on moka API provider
-* Go to `https://api.mokapos.com`
-* Add Apps (for testing purposes, you can use a free trial account)
-* Add 'Name'
-* Add Redirect URI: `https://localhost:3002/auth/moka/callback`
+* Create a free trial account at [https://backoffice.mokapos.com/register?utm_source=developers](https://backoffice.mokapos.com/register?utm_source=developers)
+* Go to [https://connect.mokapos.com](https://connect.mokapos.com)
+* Click Create a New App
+* On the first page, fill the Name and choose the category. Add this address for the  Redirect URI: `https://localhost:3002/auth/moka/callback`
+* Follow the app creation process until you can save the details
 
 ### 2. Create file .env:
 ```
