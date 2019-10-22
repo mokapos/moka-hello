@@ -13,7 +13,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'nokogiri', '~> 1.10', '>= 1.10.4'
 
 gem 'omniauth', '~> 1.9'
-# gem 'omniauth-oauth2', '~> 1.6'
+gem 'omniauth-oauth2', '~> 1.6'
+gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
 gem 'dotenv', '2.1.1'
 
 group :development, :test do
