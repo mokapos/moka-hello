@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.4'
+ruby '2.3.0'
 
 gem 'rails'
 gem 'sass-rails', '~> 5.0'
@@ -10,8 +10,10 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks', '2.5.3'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'nokogiri', '~> 1.10', '>= 1.10.4'
 
-gem 'omniauth-oauth2', '~> 1.6'
+gem 'omniauth', '~> 1.9'
+# gem 'omniauth-oauth2', '~> 1.6'
 gem 'dotenv', '2.1.1'
 
 group :development, :test do
