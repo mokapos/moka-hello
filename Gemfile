@@ -16,6 +16,7 @@ gem 'omniauth', '~> 1.9'
 gem 'omniauth-oauth2', '~> 1.6'
 gem 'omniauth-rails_csrf_protection', '~> 0.1.2'
 gem 'dotenv', '2.1.1'
+gem 'loofah', '>= 2.3.1'
 
 group :development, :test do
   gem 'byebug', '8.2.2'
