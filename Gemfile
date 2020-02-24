@@ -10,7 +10,7 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks', '2.5.3'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'nokogiri', '~> 1.10', '>= 1.10.4'
+gem 'nokogiri', '~> 1.10'
 
 gem 'omniauth', '~> 1.9'
 gem 'omniauth-oauth2', '~> 1.6'
